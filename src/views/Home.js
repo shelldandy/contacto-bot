@@ -5,6 +5,7 @@ import P from '../components/P'
 import Avatar from '../components/Avatar/index'
 import Mike from './mike.jpg'
 import Telegram from '../components/Telegram'
+import Form from '../components/Form'
 
 const Home = props => {
   return (
@@ -13,6 +14,7 @@ const Home = props => {
       <H1>Thanks for visiting</H1>
       <P>Send a message to my Telegram</P>
       <Telegram />
+      <Form />
     </Container>
   )
 }
