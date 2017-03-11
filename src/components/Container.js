@@ -1,8 +1,10 @@
-import React from 'react'
 import styled from 'styled-components'
 
-export default styled.div`
+const Container = styled.div`
   width: 95%;
   max-width: 960px;
   margin: 0 auto;
+  ${props => props.center ? 'text-align: center;' : null}
 `
+
+export default Container
