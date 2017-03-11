@@ -9,10 +9,11 @@ const Submit = styled.button`
   margin: 0 auto;
   max-width: 150px;
   border: 0;
-  padding: 10px 40px;
+  padding: 10px 50px;
   text-align: center;
   font-family: inherit;
   margin-top: 10px;
+  transition: box-shadow .2s;
   &:hover, &:focus {
     box-shadow: 0 2px 4px rgba(0,0,0,0.5);
   }
