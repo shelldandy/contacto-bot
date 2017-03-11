@@ -1,6 +1,7 @@
 import React from 'react'
 import Container from '../components/Container'
 import H1 from '../components/H1'
+import P from '../components/P'
 import Avatar from '../components/Avatar/index'
 import Mike from './mike.jpg'
 import Telegram from '../components/Telegram'
@@ -10,7 +11,7 @@ const Home = props => {
     <Container center>
       <Avatar image={Mike} />
       <H1>Thanks for visiting</H1>
-      <p>Send a message to my Telegram</p>
+      <P>Send a message to my Telegram</P>
       <Telegram />
     </Container>
   )
