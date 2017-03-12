@@ -1,3 +1,4 @@
+const Css = `
 ::selection {
   color: #fff;
   background: #1A88B7;
@@ -20,3 +21,6 @@ body {
 *:after {
   box-sizing: border-box;
 }
+`
+
+export default Css

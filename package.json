@@ -19,6 +19,8 @@
     "build": "react-scripts build",
     "postbuild": "react-snapshot",
     "test": "react-scripts test --env=jsdom",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "predeploy": "yarn run build",
+    "deploy": "surge -p build"
   }
 }
