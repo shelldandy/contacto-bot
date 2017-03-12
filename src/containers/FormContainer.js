@@ -1,5 +1,8 @@
 import React from 'react'
 import Form from '../components/Form'
+import 'whatwg-fetch'
+
+const endPoint = process.env.REACT_APP_BOT_ENDPOINT
 
 class FormContainer extends React.Component {
 
@@ -10,7 +13,9 @@ class FormContainer extends React.Component {
 
   submitHandler = event => {
     event.preventDefault()
-    console.log(this.state)
+    let request = fetch(`https://api.telegram.org/bot${endPoint}/getMe`)
+    request.then( response => response.json() )
+    .then( result => console.log(result) )
   }
 
   // https://facebook.github.io/react/docs/forms.html
