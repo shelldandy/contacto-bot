@@ -26,7 +26,7 @@ const StyledTextArea = styled.textarea`
 `
 
 const TextArea = (props) => {
-  let { name, placeholder } = props
+  let { name, placeholder, value, onChange } = props
   return (
     <div>
       <Label htmlFor={name} />
@@ -35,6 +35,8 @@ const TextArea = (props) => {
         id={name}
         name={name}
         rows={6}
+        value={value}
+        onChange={onChange}
       />
     </div>
   )

@@ -25,7 +25,7 @@ const StyledInput = styled.input`
 `
 
 const Input = (props) => {
-  let { name, type, placeholder, pattern } = props
+  let { name, type, placeholder, pattern, value, onChange } = props
   return (
     <div>
       <Label htmlFor={name} />
@@ -35,6 +35,8 @@ const Input = (props) => {
         id={name}
         pattern={pattern}
         name={name}
+        value={value}
+        onChange={onChange}
       />
     </div>
   )

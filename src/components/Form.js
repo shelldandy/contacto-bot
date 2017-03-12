@@ -12,11 +12,27 @@ const StyledForm = styled.form`
 `
 
 const Form = props => {
-  let { onSubmit } = props
+  let {
+    onSubmit,
+    nameValue,
+    messageValue,
+    inputHandler
+  } = props
   return (
     <StyledForm onSubmit={onSubmit}>
-      <Input name='name' type='text' placeholder='Name' />
-      <TextArea name='message' placeholder='Type something...' />
+      <Input
+        name='name'
+        type='text'
+        placeholder='Name'
+        value={nameValue}
+        onChange={inputHandler}
+      />
+      <TextArea
+        name='message'
+        placeholder='Type something...'
+        value={messageValue}
+        onChange={inputHandler}
+      />
       <Submit type='submit'>Send</Submit>
     </StyledForm>
   )
