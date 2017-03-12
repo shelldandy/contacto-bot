@@ -12,9 +12,9 @@ const StyledForm = styled.form`
 `
 
 const Form = props => {
-  let { action } = props
+  let { onSubmit } = props
   return (
-    <StyledForm action={action}>
+    <StyledForm onSubmit={onSubmit}>
       <Input name='name' type='text' placeholder='Name' />
       <TextArea name='message' placeholder='Type something...' />
       <Submit type='submit'>Send</Submit>
