@@ -11,11 +11,14 @@ import { BrowserRouter as Router, Route, Switch } from 'react-router-dom'
 import Home from './views/Home'
 import About from './views/About'
 
+// Needed Components
 import Container from './components/Container'
+import Navigation from './components/Navigation'
+import NavLink from './components/NavLink'
 
 const routes = [
   {
-    title: 'Home',
+    title: 'Bot',
     path: '/',
     component: Home,
     exact: true
@@ -36,6 +39,11 @@ const App = (props) => {
           ]}
           titleTemplate={`%s | Contacto Bot`}
         />
+        <Navigation>
+          {routes.map((route, i) => (
+            <NavLink key={i} {...route} />
+          ))}
+        </Navigation>
         <Switch>
           { routes.map((route, i) => (
             <Route key={i} {...route} />
