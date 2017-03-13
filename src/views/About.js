@@ -2,7 +2,6 @@ import React from 'react'
 import H1 from '../components/H1'
 import Container from '../components/Container'
 import P from '../components/P'
-import Footer from '../components/Footer'
 import A from '../components/A'
 
 const About = props => {

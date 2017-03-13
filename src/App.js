@@ -10,6 +10,7 @@ import { BrowserRouter as Router, Route, Switch } from 'react-router-dom'
 // Views/Pages
 import Home from './views/Home'
 import About from './views/About'
+import FourOhFour from './views/404'
 
 // Needed Components
 import Navigation from './components/Navigation'
@@ -52,6 +53,7 @@ const App = (props) => {
           { routes.map((route, i) => (
             <Route key={i} {...route} />
           )) }
+          <Route component={FourOhFour} />
         </Switch>
         <Container center>
           <Footer>Design + Code <A href='https://twitter.com/mpalau'>@mpalau</A></Footer>

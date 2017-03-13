@@ -1,6 +1,6 @@
 import styled from 'styled-components'
 
 export default styled.footer`
-  margin-top: ${10 / 14}em;
+  padding-top: 2em;
   font-size: ${14 / 16}em;
 `
