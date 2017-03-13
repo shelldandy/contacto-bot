@@ -13,8 +13,8 @@ const StyledInput = styled.input`
   font-size: 1em;
   color: ${black};
   border: 2px solid transparent;
-  box-shadow: 0 2px 4px rgba(0,0,0,0.5);
-  border-radius: 0;
+  box-shadow: 0 1px 2px rgba(0,0,0,0.1);
+  border-radius: 3px;
   padding: ${10 / 16}em;
   outline: none;
   margin-bottom: ${10 / 16}em;
