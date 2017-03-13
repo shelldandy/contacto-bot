@@ -12,13 +12,15 @@ import Home from './views/Home'
 import About from './views/About'
 
 // Needed Components
-import Container from './components/Container'
 import Navigation from './components/Navigation'
 import NavLink from './components/NavLink'
+import Footer from './components/Footer'
+import A from './components/A'
+import Container from './components/Container'
 
 const routes = [
   {
-    title: 'Bot',
+    title: '🤖',
     path: '/',
     component: Home,
     exact: true
@@ -32,24 +34,29 @@ const routes = [
 const App = (props) => {
   return (
     <Router>
-      <Container center>
+      <main>
         <Helmet
           style={[
             {type: 'text/css', cssText: Css}
           ]}
           titleTemplate={`%s | Contacto Bot`}
         />
-        <Navigation>
-          {routes.map((route, i) => (
-            <NavLink key={i} {...route} />
-          ))}
-        </Navigation>
+        <Container>
+          <Navigation>
+            {routes.map((route, i) => (
+              <NavLink key={i} {...route} />
+            ))}
+          </Navigation>
+        </Container>
         <Switch>
           { routes.map((route, i) => (
             <Route key={i} {...route} />
           )) }
         </Switch>
-      </Container>
+        <Container center>
+          <Footer>Design + Code <A href='https://twitter.com/mpalau'>@mpalau</A></Footer>
+        </Container>
+      </main>
     </Router>
   )
 }
