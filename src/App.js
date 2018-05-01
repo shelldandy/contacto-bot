@@ -56,7 +56,7 @@ const App = (props) => {
           <Route component={FourOhFour} />
         </Switch>
         <Container center>
-          <Footer>Design + Code <A href='https://twitter.com/mpalau'>@mpalau</A></Footer>
+          <Footer>Design + Code <A href='https://twitter.com/shelldandy'>@shelldandy</A></Footer>
         </Container>
       </main>
     </Router>
